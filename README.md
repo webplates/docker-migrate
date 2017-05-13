@@ -1,6 +1,6 @@
 # Migrate Docker image
 
-**This image is a wrapper around [mattes/migrate](https://github.com/mattes/migrate)**
+**Docker image wrapping [mattes/migrate](https://github.com/mattes/migrate)**
 
 
 ## Usage
