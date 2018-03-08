@@ -1,0 +1,26 @@
+language: generic
+
+sudo: required
+
+services:
+    - docker
+
+env:
+    global:
+        - DOCKER_IMAGE=webplates/migrate
+
+matrix:
+    include:
+        # 3.0
+        - env: VERSION=3.0.1 DOCKER_TAG=latest
+        - env: VERSION=3.0.1 DOCKER_TAG=3.0.1
+        - env: VERSION=3.0.1 DOCKER_TAG=3.0
+        - env: VERSION=3.0.1 DOCKER_TAG=3
+
+script: ./build.sh
+
+deploy:
+    provider: script
+    script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD" && docker push $DOCKER_IMAGE:$DOCKER_TAG
+    on:
+        branch: master
