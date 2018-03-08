@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/webplates/docker-migrate.svg?style=flat-square)](https://travis-ci.org/webplates/docker-migrate)
 [![Docker Image](https://img.shields.io/badge/docker%20image-webplates%2Fmigrate-blue.svg?style=flat-square)](https://hub.docker.com/r/webplates/migrate)
 
-**Docker image wrapping [mattes/migrate](https://github.com/mattes/migrate)**
+**Docker image for [mattes/migrate](https://github.com/mattes/migrate)**
 
 
 ## Usage
